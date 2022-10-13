@@ -22,9 +22,9 @@ describe('sayHello', function() {
     it('should return a string when called', function() {
         expect(typeof sayHello()).toBe("string");
     });
-    // it('should return the string "Hello, World!" when executed', function() {
-    //     expect(helloWorld()).toBe("Hello, World!");
-    // });
+    it('should return the string "Hello, Jane!" when executed', function() {
+        expect(sayHello()).toBe("Hello, Jane!");
+    });
     // it("should never return 'undefined' when called", function() {
     //     expect(helloWorld()).not.toBe(undefined);
     // });
