@@ -153,3 +153,31 @@ describe('isVowel', function() {
     });
 });
 
+describe('add', function() {
+    it('should be a defined function', function () {
+        expect(typeof add).toBe('function');
+    });
+    it('should return the sum of 2 and 3 when executed', function () {
+        expect(add(2,3)).toBe(5);
+    });
+    it('should return the sum of (-3) and (-9) when executed', function () {
+        expect(add(-3, -9).toBe(5));
+    });
+    it('should return the sum of "5" and 6 when executed', function () {
+        expect(add("5", 6).toBe(5));
+    });
+    it('should return the sum of "-4" and "10" when executed', function () {
+        expect(add(("-4"),("10")).toBe(5));
+    });
+    it('should return NaN', function () {
+        expect(add("banana","split")).toBe(NaN);
+    });
+    it('should return NaN', function () {
+        expect(add(2, "apples")).toBe(NaN);
+    });
+    it('should return NaN', function () {
+        expect(add()).toBe(NaN);
+    });
+
+
+});
