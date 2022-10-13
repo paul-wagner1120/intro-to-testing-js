@@ -11,14 +11,25 @@ function sayHello(input) {
     } else {
         return "Hello, World!";
     }
-   // nicholas and i were in the same breakout room and he helped me refactor
+   // nicholas and I were in the same breakout room, and he helped me refactor
 }
 
 function isFive(userInput) {
-    if (parseFloat(userInput) === 5) {
-        return true
-    } else {
-        return false
+    return parseFloat(userInput) === 5
+}
+
+function isEven(testInput) {
+     return parseFloat(testInput) % 2 === 0;
+}
+
+function isVowel(x) {
+    switch (x) {
+        case "a":
+            return true;
+        case "A":
+            return true;
+        default:
+            return false;
     }
 }
 
