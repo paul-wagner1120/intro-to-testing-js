@@ -161,22 +161,22 @@ describe('add', function() {
         expect(add(2,3)).toBe(5);
     });
     it('should return the sum of (-3) and (-9) when executed', function () {
-        expect(add(-3, -9).toBe(5));
+        expect(add(-3, -9)).toBe(-12);
     });
     it('should return the sum of "5" and 6 when executed', function () {
-        expect(add("5", 6).toBe(5));
+        expect(add("5", 6)).toBe(11);
     });
     it('should return the sum of "-4" and "10" when executed', function () {
-        expect(add(("-4"),("10")).toBe(5));
+        expect(add("-4","10")).toBe(6);
     });
     it('should return NaN', function () {
-        expect(add("banana","split")).toBe(NaN);
+        expect(add("banana","split")).toBeNaN(true);
     });
     it('should return NaN', function () {
-        expect(add(2, "apples")).toBe(NaN);
+        expect(add(2, "apples")).toBeNaN(true);
     });
     it('should return NaN', function () {
-        expect(add()).toBe(NaN);
+        expect(add()).toBeNaN(true);
     });
 
 
